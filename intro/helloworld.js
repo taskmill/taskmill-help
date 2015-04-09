@@ -1,5 +1,6 @@
 /*
 @deploy
+@title Hello World!
 */
 
 module.exports = function(req, res, next) {

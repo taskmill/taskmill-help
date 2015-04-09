@@ -1,5 +1,6 @@
 /*
 @deploy
+@title Minimal Hello world!
 */
 
 module.exports = function(req, res, next) {

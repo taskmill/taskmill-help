@@ -1,5 +1,6 @@
 /*
 @deploy
+@title Set Streaming mode
 @input
 {
   "type" : "stream"

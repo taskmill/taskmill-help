@@ -1,5 +1,6 @@
 /*
 @deploy
+@title Set input schema
 @input
 {
   "content-type" : "text/plain"

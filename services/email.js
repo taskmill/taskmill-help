@@ -1,5 +1,6 @@
 /*
 @deploy
+@title Example Email send
 */
 
 module.exports = function(req, res, next){

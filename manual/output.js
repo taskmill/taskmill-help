@@ -1,5 +1,6 @@
 /*
 @deploy
+@title Set output schema
 @output
 {
   "content-type" : "application/json"

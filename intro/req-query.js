@@ -1,5 +1,6 @@
 /*
 @deploy
+@title Request Query String
 @query
 {
   "example" : "$top=5&$skip=2&$select=name,age,species"
