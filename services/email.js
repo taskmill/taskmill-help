@@ -1,6 +1,11 @@
 /*
 @deploy
 @title Example Email send
+@input
+{
+  "content-type" : "text/plain",
+  "example" : "Hello from TaskMill"
+}
 */
 
 module.exports = function(req, res, next){
@@ -10,8 +15,8 @@ module.exports = function(req, res, next){
       , json    : {
           to      : 'hello@taskmill.io'
         , from    : 'hello@taskmill.io'
-        , subject : 'Hello from email.js'
-        , text    : 'Hola'
+        , subject : 'subject: ' + req.body
+        , text    : req.body
       }
     })
     .pipe(res);

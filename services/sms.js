@@ -1,6 +1,11 @@
 /*
 @deploy
 @title Example SMS send
+@input
+{
+  "content-type" : "text/plain",
+  "example" : "Hello from TaskMill"
+}
 */
 
 module.exports = function(req, res, next){
@@ -8,8 +13,8 @@ module.exports = function(req, res, next){
         uri     : '@host/api/exec/master/sms.js'
       , method  : 'POST'
       , json    : {
-          'to' : '+14251234567',
-          'body' : 'Hi from TaskMill'
+          'to' : '+12532143749',
+          'body' : req.body
         }
     })
     .pipe(res);

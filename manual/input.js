@@ -3,7 +3,8 @@
 @title Set input schema
 @input
 {
-  "content-type" : "text/plain"
+  "content-type" : "text/plain",
+  "example" : "Some text on the request body"
 }
 */
 
