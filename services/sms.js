@@ -5,7 +5,7 @@
 
 module.exports = function(req, res, next){
   this.request({
-        uri     : '@host/api/blob/master/sms.js'
+        uri     : '@host/api/exec/master/sms.js'
       , method  : 'POST'
       , json    : {
           'to' : '+14251234567',

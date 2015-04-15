@@ -5,7 +5,7 @@
 
 module.exports = function(req, res, next){
   this.request({
-        uri     : '@host/api/blob/master/email.js'
+        uri     : '@host/api/exec/master/email.js'
       , method  : 'POST'
       , json    : {
           to      : 'hello@taskmill.io'
