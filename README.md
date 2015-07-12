@@ -74,11 +74,11 @@ You can also define input and output contrainsts as well as additional metadata.
 | attribute      | usage                                        | default    |
 |----------------|----------------------------------------------|------------|
 | @deploy        | required for all scripts                     | required   |
-| @title         | human readable title                         | none       |
-| @description   | detailed description                         | none       |
+| @title         | human readable title                         | *none*     |
+| @description   | detailed description                         | *none*     |
 | @type          | `generate`, `transform`, or `none`           | `none`     |
-| @input         | json with input `content-type` and `example` | undefined  |
-| @output        | json with output `content-type`              | undefined  |
+| @input         | json with input `content-type` and `example` | *undefined*|
+| @output        | json with output `content-type`              | *undefined*|
 
 # Services
 
