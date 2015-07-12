@@ -58,6 +58,28 @@ You can set the content-type header either programaticaly or through the scripts
 #### Manual
 <div class='tm-embed' src='/a7medkamel/taskmill-help/blob/master/manual/output.js' />
 
+# Manual
+Each script should define a usage manual as a comment block. The manual is used to describe variouse aspects of the script's execution.
+
+For a script to be exposed to Taskmill, your manual should start with `@deploy`.
+
+```javascript
+/*
+@deploy
+*/
+```
+
+You can also define input and output contrainsts as well as additional metadata.
+
+| attribute      | usage                                        | default |
+|----------------|----------------------------------------------|---------|
+| @deploy        | required for all scripts                     | required|
+| @title         | human readable title                         | none    |
+| @description   | detailed description                         | none    |
+| @type          | `generate`, `transform`, or `none`           | none    |
+| @input         | json with input `content-type` and `example` | none    |
+| @output        | json with output `content-type`              | none    |
+
 # Services
 
 We provide built in services that you can make use of. Such services include Email, SMS, and Automated Phone Calls.
